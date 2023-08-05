@@ -144,7 +144,7 @@ function abrirComestibles() {
     precioTotal.innerText = carrito.reduce((acc, product) => acc + product.cantidad * product.precio, 0)
     productos.slice(0, 12).forEach((product) => {
         const { id, nombre, precio, precioAnterior, cantidad, img } = product
-        contenedor.innerHTML += `<div class="col-2 div-externo ">
+        contenedor.innerHTML += `<div class=" col-md-2 col-12 div-externo ">
     <div class="div-interno"> <img src="${product.img}" alt="${product.nombre} ">
         <p><b>${product.nombre} </b> <br>
             <span> Antes $${product.precioAnterior} </span>
